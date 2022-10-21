@@ -13,7 +13,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   position: fixed;
   z-index: 20;
-  background: red;
 `;
 
 const NavLink = css`
@@ -65,25 +64,23 @@ const NavBtn = styled.div`
 
 const Navbar = () => {
   return (
-    <section className="navbar">
-      <Nav>
-        <Logo>Nottingham Properties</Logo>
-        <MenuBars />
-        <NavMenu>
-          {menuData.map((item, index) => (
-            <NavMenuLinks to={item.link} key={index}>
-              {item.title}
-            </NavMenuLinks>
-          ))}
-        </NavMenu>
+    <Nav>
+      <Logo>Nottingham Properties</Logo>
+      <MenuBars />
+      <NavMenu>
+        {menuData.map((item, index) => (
+          <NavMenuLinks to={item.link} key={index}>
+            {item.title}
+          </NavMenuLinks>
+        ))}
+      </NavMenu>
 
-        <NavBtn>
-          <Button to="/contact" primary={true}>
-            Contact Us
-          </Button>
-        </NavBtn>
-      </Nav>
-    </section>
+      <NavBtn>
+        <Button to="/contact" primary={true}>
+          Contact Us
+        </Button>
+      </NavBtn>
+    </Nav>
   );
 };
 
