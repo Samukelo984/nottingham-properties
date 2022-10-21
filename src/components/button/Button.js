@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Button = styled(Link)`
   background: ${({ primary }) => (primary ? "#000d1a" : "cd853f")};
   min-width: 6.2rem;
-  max-width: 12, 5rem;
+  max-width: 9, 5rem;
   padding: ${({ big }) => (big ? "16px 40px" : "14px 24px")};
   display: flex;
   justify-content: center;
