@@ -16,6 +16,8 @@ const HeroWrapper = styled.div`
   height: 100%;
   position: relative;
   display: flex;
+  justify-content:center;
+  align-items-center;
   overflow: hidden;
 `;
 
